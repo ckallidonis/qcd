@@ -4,20 +4,23 @@ all: libqcd.a
 
 CFLAGS += -I../include
 SOURCES=\
-	qcd_rng\
-	qcd_blas\
-	qcd_communication\
-	qcd_gamma\
-	qcd_gaugeFixing\
-	qcd_init\
-	qcd_io\
-	qcd_observables\
-	qcd_smearing\
-	qcd_wilson\
-	qcd_stochastic\
-	qcd_contract_2pt\
-	qcd_contract_2pt_pr\
-	qcd_particle_data
+	qcd_blas		\
+	qcd_communication	\
+	qcd_contract_2pt	\
+	qcd_contract_2pt_pr	\
+	qcd_contract_3pt_all	\
+	qcd_currents_udsc	\
+	qcd_gamma		\
+	qcd_gaugeFixing		\
+	qcd_init		\
+	qcd_io			\
+	qcd_observables		\
+	qcd_particle_data	\
+	qcd_rng			\
+	qcd_smearing		\
+	qcd_smearing_opt	\
+	qcd_stochastic		\
+	qcd_wilson
 
 include $(wildcard *.d)
 

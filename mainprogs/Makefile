@@ -21,6 +21,9 @@ TARGETS=b_minus_Dx\
 	twop-hadr\
 	threep-block\
 	twop-block\
+        twop_all_opt\
+        threep_all_opt\
+        sec_source_fix_curr\
         zfac_NEW_format
 
 LIBDIR = ../lib

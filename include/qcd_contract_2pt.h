@@ -5,6 +5,9 @@
  * Header file for qcd_contract_2pt.c
  * 
  */
+
+#ifndef H_QCD_CONTRACT_2PT
+#define H_QCD_CONTRACT_2PT 1
  
 
 int qcd_f1f2f1_2pt(qcd_int_4 ctr, qcd_int_2 cgcg_ind[16*16][4],qcd_complex_16 cgcg_val[16*16], qcd_complex_16 *block[4][4],
@@ -25,3 +28,5 @@ int qcd_lambdas_xis_2pt(qcd_int_4 ctr, qcd_int_2 cg5cg5_ind[16*16][4],qcd_comple
  //=====================================================================
 void qcd_contractions2pt(qcd_uint_4 particle_id, qcd_complex_16 *block[4][4], qcd_propagator *uprop,qcd_propagator *dprop,qcd_propagator *sprop,qcd_propagator *cprop,
 			 qcd_geometry *geo, qcd_uint_4 lt);
+
+#endif
